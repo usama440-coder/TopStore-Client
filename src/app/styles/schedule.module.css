@@ -1,0 +1,13 @@
+.scheduleTable {
+    margin: auto;
+    max-width: 400px;
+    width: 100%;
+    margin-top: -15px;
+    position: relative;
+    z-index: 1;
+}
+
+.scheduleTable tr td {
+    text-align: center;
+    padding: 10px 0px;
+}

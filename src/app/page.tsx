@@ -6,6 +6,8 @@ import SectionBreak from "./components/SectionBreak";
 import Service from "./components/Service";
 import ProductCard from "./components/ProductCard";
 import Testimonial from "./components/Testimonial";
+import Schedule from "./components/Schedule";
+import Footer from "./components/Footer";
 
 const Home = () => {
   return (
@@ -86,28 +88,13 @@ const Home = () => {
         />
       </div>
 
-      <div
-        style={{ backgroundImage: `url(/img/schedule_background.jpg)` }}
-        className={style.scheduleContainer}
-      >
+      <div className={style.scheduleContainer}>
         <SectionBreak heading="Visit Our Store" description="Opening hours" />
-        <div className={style.sheduleOverlay}></div>
-        <table>
-          <tbody>
-            <tr>
-              <td>Mon - Fri</td>
-              <td>8:00 am - 6:30 pm</td>
-            </tr>
-            <tr>
-              <td>Saturday</td>
-              <td>8:00 am - 6:00 pm</td>
-            </tr>
-            <tr>
-              <td>Sunday</td>
-              <td>Closed</td>
-            </tr>
-          </tbody>
-        </table>
+        <Schedule />
+      </div>
+
+      <div>
+        <Footer />
       </div>
     </>
   );

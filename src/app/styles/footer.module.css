@@ -1,0 +1,34 @@
+.footer {
+    margin: auto;
+    text-align: center;
+    background-color: var(--background-dark);
+    padding: 2rem 3rem;
+}
+
+.footerContent {
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
+    color: var(--primary-color-light);
+}
+
+.footerContent h3 {
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.footerContent p {
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+.footerContent b {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.socialIcon {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-right: 5px;
+}

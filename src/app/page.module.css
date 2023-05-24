@@ -24,33 +24,20 @@
 
 .scheduleContainer {
     margin-top: 50px;
-    padding: 20px 0px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    padding: 1rem 3rem;
     position: relative;
 }
 
-.sheduleOverlay {
-    position: absolute;
-    top: 0;
-    left: 0;
+.scheduleContainer::before {
+    content: '';
     width: 100%;
     height: 100%;
-    background-color: #ffffff94;
-    z-index: 1;
-}
-
-
-.scheduleContainer table {
-    margin: auto;
-    max-width: 400px;
-    width: 100%;
-    margin-top: -15px;
-    
-}
-
-.scheduleContainer table tr td {
-    text-align: center;
-    padding: 10px 0px;
+    background-image: url('/img/schedule_background.jpg');
+    position: absolute;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    opacity: 0.2;
+    z-index: 0;
+    background-position: center center;
 }

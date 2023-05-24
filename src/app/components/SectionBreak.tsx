@@ -13,7 +13,7 @@ const SectionBreak = ({ heading, description }: SectionBreakProps) => {
       {heading !== "Visit Our Store" ? (
         <h3>{heading}</h3>
       ) : (
-        <h2>
+        <h2 style={{ color: "black" }}>
           Visit Our <span>Store</span>
         </h2>
       )}
