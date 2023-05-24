@@ -1,0 +1,20 @@
+.serviceContainer {
+    border: 2px solid var(--background-medium);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 50px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.serviceIcon {
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+
+.serviceContainer p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--text-color-medium);
+}

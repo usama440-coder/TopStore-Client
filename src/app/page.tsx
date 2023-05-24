@@ -1,95 +1,116 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import style from "./page.module.css";
 
-export default function Home() {
+import Carousel from "./components/Carousel";
+import Navbar from "./components/Navbar";
+import SectionBreak from "./components/SectionBreak";
+import Service from "./components/Service";
+import ProductCard from "./components/ProductCard";
+import Testimonial from "./components/Testimonial";
+
+const Home = () => {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
+    <>
+      <Navbar />
+      <Carousel />
+      <SectionBreak
+        heading="High Quality, Low Markup"
+        description="Here is how we do it!"
+      />
+
+      <div className={style.services}>
+        <Service icon="delivery" description="Free Delivery" />
+        <Service icon="customer" description="Customer Service" />
+        <Service icon="payment" description="Secure Payment" />
       </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+      <SectionBreak heading="Featured Products" description="We Recommend" />
+
+      <div className={style.featuredProducts}>
+        <ProductCard
+          link="/"
+          imgRef="/img/product_1.png"
+          name="Blue Sweater"
+          price="2000"
+        />
+        <ProductCard
+          link="/"
+          imgRef="/img/product_1.png"
+          name="Blue Sweater"
+          price="2000"
+        />
+        <ProductCard
+          link="/"
+          imgRef="/img/product_1.png"
+          name="Blue Sweater"
+          price="2000"
+        />
+        <ProductCard
+          link="/"
+          imgRef="/img/product_1.png"
+          name="Blue Sweater"
+          price="2000"
         />
       </div>
 
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <SectionBreak
+        heading="Testimonials"
+        description="What our valuable customers say"
+      />
+      <div className={style.testimonialsContainer}>
+        <Testimonial />
       </div>
-    </main>
-  )
-}
+
+      <SectionBreak
+        heading="Top Products"
+        description="See what people like the most"
+      />
+
+      <div className={style.featuredProducts}>
+        <ProductCard
+          link="/"
+          imgRef="/img/product_1.png"
+          name="Blue Sweater"
+          price="2000"
+        />
+        <ProductCard
+          link="/"
+          imgRef="/img/product_1.png"
+          name="Blue Sweater"
+          price="2000"
+        />
+        <ProductCard
+          link="/"
+          imgRef="/img/product_1.png"
+          name="Blue Sweater"
+          price="2000"
+        />
+      </div>
+
+      <div
+        style={{ backgroundImage: `url(/img/schedule_background.jpg)` }}
+        className={style.scheduleContainer}
+      >
+        <SectionBreak heading="Visit Our Store" description="Opening hours" />
+        <div className={style.sheduleOverlay}></div>
+        <table>
+          <tbody>
+            <tr>
+              <td>Mon - Fri</td>
+              <td>8:00 am - 6:30 pm</td>
+            </tr>
+            <tr>
+              <td>Saturday</td>
+              <td>8:00 am - 6:00 pm</td>
+            </tr>
+            <tr>
+              <td>Sunday</td>
+              <td>Closed</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </>
+  );
+};
+
+export default Home;

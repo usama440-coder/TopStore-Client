@@ -1,0 +1,20 @@
+.sectionBreak {
+    /* border: 2px solid red; */
+    margin: 3rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.3;
+    color: var(--text-color-medium);
+}
+
+.sectionBreak > div {
+    border-bottom: 2px solid var(--primary-color-medium);
+    width: 20rem;
+    margin-top: 0.5rem;
+}
+
+.sectionBreak span {
+    color: var(--primary-color);
+    font-family: 'Josefin Sans', sans-serif;
+}

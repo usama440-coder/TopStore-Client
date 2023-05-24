@@ -1,0 +1,28 @@
+.navbarContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbarLinks {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.navbarLinksIcons {
+    display: flex;
+    gap: 10px;
+}
+
+.navbarLink {
+    text-decoration: none;
+    color: var(--text-color-light);
+    font-weight: 500;
+}
+
+.navbarLink:hover {
+    color: var(--primary-color)
+}
+
