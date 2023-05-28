@@ -1,0 +1,9 @@
+.sectionTitle {
+    padding: 1rem 4rem;
+    background-color: var(--background-light);
+    color: var(--primary-color);
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: auto;
+    max-width: 1600px;
+}
