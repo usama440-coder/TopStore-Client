@@ -48,7 +48,7 @@ const Products = () => {
 
         <div className={style.productsList}>
           <ProductCard
-            link="/"
+            link="/products/654"
             imgRef="/img/product_1.png"
             name="Blue Sweater"
             price="2000"
