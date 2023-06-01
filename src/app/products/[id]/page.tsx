@@ -3,7 +3,7 @@ import Navbar from "../../components/Navbar";
 import SectionTitle from "../../components/SectionTitle";
 import { FaStar } from "react-icons/fa";
 import MediumPrimaryBtn from "../../components/MediumPrimaryBtn";
-import ReactImageZoom from "react-image-zoom";
+import SectionBreak from "../../components/SectionBreak";
 
 const Product = () => {
   return (
@@ -17,6 +17,9 @@ const Product = () => {
               <img src="/img/product_1.png" alt="product-1" />
             </div>
             <div className={style.productImagesSmallContainer}>
+              <div className={style.productImagesSmall}>
+                <img src="/img/product_1.png" alt="product-1" />
+              </div>
               <div className={style.productImagesSmall}>
                 <img src="/img/product_1.png" alt="product-1" />
               </div>
@@ -62,6 +65,88 @@ const Product = () => {
           <p>
             <b>Category: </b>Women Clothing
           </p>
+        </div>
+      </div>
+      <SectionBreak
+        heading="Customer Reviews"
+        description="What others think about this product"
+      />
+      <div className={style.reviewsContainer}>
+        <div className={style.userReviews}>
+          <h3 className={style.userReviewsHeading}>User Reviews</h3>
+          <div className={style.userReviewsContent}>
+            <div className={style.reviewBox}>
+              <div>
+                <h4>John Doe</h4>
+                <div>
+                  <FaStar className={style.ratingIcon} />
+                  <FaStar className={style.ratingIcon} />
+                  <FaStar className={style.ratingIcon} />
+                  <FaStar className={style.ratingIcon} />
+                  <FaStar className={style.ratingIcon} />
+                </div>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Accusamus, illo.
+              </p>
+            </div>
+            <div className={style.reviewBox}>
+              <div>
+                <h4>John Doe</h4>
+                <div>
+                  <FaStar className={style.ratingIcon} />
+                  <FaStar className={style.ratingIcon} />
+                  <FaStar className={style.ratingIcon} />
+                  <FaStar className={style.ratingIcon} />
+                  <FaStar className={style.ratingIcon} />
+                </div>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Accusamus, illo.
+              </p>
+            </div>
+            <div className={style.reviewBox}>
+              <div>
+                <h4>John Doe</h4>
+                <div>
+                  <FaStar className={style.ratingIcon} />
+                  <FaStar className={style.ratingIcon} />
+                  <FaStar className={style.ratingIcon} />
+                  <FaStar className={style.ratingIcon} />
+                  <FaStar className={style.ratingIcon} />
+                </div>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Accusamus, illo.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className={style.reviewsForm}>
+          <h3 className={style.userReviewsHeading}>Add Review</h3>
+          <form className={style.reviewForm}>
+            <div>
+              <input type="text" placeholder="Name" />
+              <input type="email" placeholder="Email" />
+            </div>
+            <div>
+              <FaStar className={style.ratingIcon} />
+              <FaStar className={style.ratingIcon} />
+              <FaStar className={style.ratingIcon} />
+              <FaStar className={style.ratingIcon} />
+              <FaStar className={style.ratingIcon} />
+            </div>
+            <textarea
+              name=""
+              id=""
+              cols={30}
+              rows={10}
+              placeholder="Your Review"
+            ></textarea>
+          </form>
         </div>
       </div>
     </>
